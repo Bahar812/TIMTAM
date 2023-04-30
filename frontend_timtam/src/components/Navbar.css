@@ -1,0 +1,61 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&family=Montserrat:wght@300;500;700&display=swap");
+
+body {
+  font-family: "Inter", sans-serif;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.navbar_container {
+  background-color: #461ad7;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 75%;
+}
+
+.logo {
+    cursor: pointer;
+}
+
+
+.logo h1 {
+  font-size: 36px;
+  color: white;
+  font-weight: 800;
+}
+
+.navbar_links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 25px;
+}
+
+.navbar_link {
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+  transition: 0.1s ease-out;
+}
+
+.navbar_link:hover {
+    opacity: 70%;
+}
+
+.navbar_btn {
+  font-weight: 600;
+  text-decoration: none;
+  color: black;
+  background-color: white;
+  padding: 15px 30px;
+  border-radius: 5px;
+  transition: 0.2s ease-out;
+}
+
+.navbar_btn:hover {
+  color: white;
+  background-color: black;
+}
