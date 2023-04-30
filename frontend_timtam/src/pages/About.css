@@ -11,7 +11,7 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: #ffffff;
+    background-color: #f4f3fd;
     justify-content: center;
     box-sizing: border-box;
 }
@@ -105,8 +105,8 @@ body{
     margin-bottom: 20px;
     margin-right: 10px;
     margin-left: 10px;
-    /* margin-left: 80px; */
-    border: 1px solid rgb(92, 92, 92);
+    /*margin-left: 80px;
+    */border: 1px solid rgb(92, 92, 92);
     padding: 20px;
     border-radius: 25px;
     -webkit-border-radius: 25px;
@@ -114,6 +114,7 @@ body{
     -ms-border-radius: 25px;
     -o-border-radius: 25px;
     height: 140px;
+    background-color: #ffffff;
 }
 
 .card img{
@@ -134,3 +135,8 @@ body{
     margin: 0;
     padding: 0;
 }
+
+.marginaja{
+    margin-bottom: 200px;
+}
+
