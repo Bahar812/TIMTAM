@@ -8,11 +8,11 @@ const HomePage = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
 
   const handlePrevClick = () => {
-    setCurrentSlide((prevSlide) => (prevSlide <= 60 ? 860 : prevSlide - 200));
+    setCurrentSlide((prevSlide) => (prevSlide <= 60 ? 750 : prevSlide - 250));
   };
 
   const handleNextClick = () => {
-    setCurrentSlide((prevSlide) => (prevSlide >= 860 ? 0 : prevSlide + 200));
+    setCurrentSlide((prevSlide) => (prevSlide >= 750 ? 0 : prevSlide + 250));
   };
 
   return (
@@ -62,10 +62,10 @@ const HomePage = () => {
           </div>
         </div>
         <div className="btns">
-          <button className="btn prev_btn" onClick={handlePrevClick}>
+          <button className="btn prev_btns" onClick={handlePrevClick}>
             prev
           </button>
-          <button className="btn next_btn" onClick={handleNextClick}>
+          <button className="btn next_btns" onClick={handleNextClick}>
             next
           </button>
         </div>

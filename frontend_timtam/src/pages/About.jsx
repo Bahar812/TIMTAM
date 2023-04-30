@@ -16,12 +16,13 @@ const About = () =>{
                 <div className="left_about_first">
                         <h3>Tentang TIMTAM</h3>
                         <h1>Apa Sih TIMTAM itu?</h1>
-                        <p>TIMTAM adalah sebuah platform pendidikan teknologi yang <br/> 
-                        menyediakan konten Self-Improvement dengan metode <br/>
+                        <p>TIMTAM adalah sebuah platform pendidikan teknologi yang
+                        menyediakan konten Self-Improvement dengan metode
                          “Cognitive Behavioral Therapy” dalam bentuk online.</p>
                 </div>
                 <div className="right_about_first">
                     <img src="../../assets/James_confused.png" alt="" />
+                    <img src="../../assets/mikir fix 1.png" alt="" />
                 </div>
             </section>
             <section className="second_section_about">
