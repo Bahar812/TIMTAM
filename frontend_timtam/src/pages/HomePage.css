@@ -18,11 +18,13 @@ body {
 
 .first_section {
   display: flex;
-  align-items: center;
+  align-items: start;
+  padding-top: 50px;
   justify-content: center;
   background-color: #461ad7;
   /* padding: 0 20px 40px; */
   width: 75%;
+  height: 70vh;
 }
 
 .left {
@@ -35,7 +37,7 @@ body {
   position: relative;
   /* left: 10%; */
   color: white;
-  font-size: 2.5rem;
+  font-size: 2rem;
 }
 
 .up h1 {
@@ -45,8 +47,8 @@ body {
 
 .down {
   color: white;
-  font-size: 1.5rem;
-  font-weight: 600;
+  font-size: 14px;
+  font-weight: 400;
   /* position: relative; */
   /* top: 30px; */
   /* left: 10%; */
@@ -65,10 +67,10 @@ body {
   text-decoration: none;
   color: black;
   font-weight: 600;
-  padding: 15px 30px;
+  padding: 15px 25px;
   border-radius: 5px;
   background-color: white;
-  font-size: 22px;
+  font-size: 16px;
   transition: 0.2s ease-out;
 }
 
@@ -84,10 +86,10 @@ body {
 }
 
 .right img {
-  position: relative;
-  /* right: 100px; */
+  position: absolute;
+  right: 100px;
   width: fit-content;
-  height: 600px;
+  height: 500px;
 }
 
 .second_section {
@@ -114,9 +116,9 @@ body {
 }
 
 .carousel_container {
-  width: 660px;
+  width: 1000px;
   margin: 0 auto;
-  padding-left: 20px;
+  /* padding-left: 20px; */
   position: relative;
   overflow: hidden;
 }
@@ -129,14 +131,19 @@ body {
 }
 
 .carousel_items img {
-  width: 200px;
+  width: 230px;
   height: 100%;
   object-fit: cover;
+  transition: 0.2s ease-in-out;
+  cursor: pointer;
+}
+.carousel_items img:hover {
+  opacity: 0.8;
 }
 
 .btns {
     margin: 20px 0;
-    width: 660px;
+    width: 1000px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -158,6 +165,10 @@ body {
     border: white;
     background-color: #461ad7;
     color: white;
+}
+
+.next_btns {
+  margin-right: 21px;
 }
 
 .third_section {
@@ -232,8 +243,8 @@ body {
 .third_btn button {
     border: none;
     background-color: #461ad7;
-    padding: 18px 40px;
-    font-size: 20px;
+    padding: 15px 25px;
+    font-size: 16px;
     font-weight: 600;
     color: white;
     border-radius: 5px;
@@ -294,10 +305,10 @@ body {
 .fourth_btn button {
     border: none;
     background-color: #461ad7;
-    padding: 20px 40px;
+    padding: 15px 25px;
     border-radius: 5px;
     color: white;
-    font-size: 18px;
+    font-size: 14px;
     font-weight: 600;
     cursor: pointer;
     transition: 0.2s ease-in;
