@@ -18,7 +18,7 @@ const Navbar = () => {
         <Link to="/game" className="navbar_link">
           Games
         </Link>
-        <Link to="/note" className="navbar_link">
+        <Link to="/dashboard" className="navbar_link">
           Notes
         </Link>
         <Link to="/article" className="navbar_link">
