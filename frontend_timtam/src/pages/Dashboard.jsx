@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import "../pages/Dashboard.css";
 import DashboardNavbar from "../components/DashboardNavbar";
+import Navbar from "../components/Navbar";
 
 import { IoNewspaperOutline } from "react-icons/io5";
 import { IoIosBookmarks } from "react-icons/io";
@@ -10,6 +11,13 @@ import { ImStatsBars } from "react-icons/im";
 import { IoGameController } from "react-icons/io5";
 import { MdGroups2 } from "react-icons/md";
 import { BsPersonCheck } from "react-icons/bs";
+
+import TestScreening from "../components/TestScreening";
+import PembelajaranInteraktif from "../components/PembelajaranInteraktif";
+import Jurnal from "../components/Jurnal";
+import Stats from "../components/Stats";
+import Community from "../components/Community";
+import Chat from "../components/Chat";
 
 const Dashboard = () => {
   const [currentPage, setCurrentPage] = useState("jurnal");
@@ -71,44 +79,48 @@ const Dashboard = () => {
           </div>
         </div>
 
-        <div className="dash_content">
+        <div className="dash_content_container">
           <DashboardNavbar />
           <div
-            className={
-              currentPage === "test-screening" ? "test-screening" : "hidden"
-            }
+            className={currentPage === "test-screening" ? "shown" : "hidden"}
           >
-            <div className="test-screening-content">
-              <div className="test-screening-progress-bar">
-                <div className="test-screening-inner-bar"></div>
-              </div>
-
-              <div className="test-screening-question-box"></div>
+            <div className="dash-content">
+              <TestScreening />
             </div>
           </div>
           <div
             className={
-              currentPage === "pembelajaran-interaktif"
-                ? "pembelajaran-interaktif"
-                : "hidden"
+              currentPage === "pembelajaran-interaktif" ? "shown" : "hidden"
             }
           >
-            <h1>PEMBELAJARAN INTERAKTIF</h1>
+            <div className="dash-content">
+              <PembelajaranInteraktif />
+            </div>
           </div>
-          <div className={currentPage === "jurnal" ? "jurnal" : "hidden"}>
-            <h1>JURNAL</h1>
+          <div className={currentPage === "jurnal" ? "shown" : "hidden"}>
+            <div className="dash-content">
+              <Jurnal />
+            </div>
           </div>
-          <div className={currentPage === "stats" ? "stats" : "hidden"}>
-            <h1>STATS</h1>
+          <div className={currentPage === "stats" ? "shown" : "hidden"}>
+            <div className="dash-content">
+              <Stats />
+            </div>
           </div>
-          <div className={currentPage === "game" ? "game" : "hidden"}>
-            <h1>GAME</h1>
+          <div className={currentPage === "game" ? "shown" : "hidden"}>
+            <div className="dash-content">
+              <PembelajaranInteraktif />
+            </div>
           </div>
-          <div className={currentPage === "community" ? "community" : "hidden"}>
-            <h1>COMMUNITY</h1>
+          <div className={currentPage === "community" ? "shown" : "hidden"}>
+            <div className="dash-content">
+              <Community />
+            </div>
           </div>
-          <div className={currentPage === "chat" ? "chat" : "hidden"}>
-            <h1>CHAT</h1>
+          <div className={currentPage === "chat" ? "shown" : "hidden"}>
+            <div className="dash-content">
+              <Chat />
+            </div>
           </div>
         </div>
       </div>

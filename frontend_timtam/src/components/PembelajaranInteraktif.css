@@ -1,0 +1,16 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&family=Montserrat:wght@300;500;700&display=swap");
+
+.pembelajaran-container {
+    display: flex;
+    align-items: start;
+    justify-content: start;
+    height: 100%;
+    width: 100%;
+}
+
+.videoplayer-cards {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
