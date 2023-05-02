@@ -4,6 +4,7 @@ import About from "./pages/About";
 import Articles from "./pages/Articles";
 import Games from "./pages/Games";
 import Dashboard from "./pages/Dashboard";
+import SignIn from "./pages/SignIn";
 
 function App () {
   return (
@@ -17,6 +18,7 @@ function App () {
         <Route path="/login" element={<HomePage />}/>
         <Route path="/register" element={<HomePage />}/>
         <Route path="/dashboard" element={<Dashboard />}/>
+        <Route path="/signin" element={<SignIn />}/>
       </Routes>
     </Router>
   )
