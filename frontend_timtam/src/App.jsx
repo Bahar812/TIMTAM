@@ -3,9 +3,7 @@ import HomePage from "./pages/HomePage";
 import About from "./pages/About";
 import Articles from "./pages/Articles";
 import Games from "./pages/Games";
-
-
-
+import Dashboard from "./pages/Dashboard";
 
 function App () {
   return (
@@ -14,12 +12,11 @@ function App () {
         <Route path="/" element={<HomePage />}/>
         <Route path="/about" element={<About />}/>
         <Route path="/game" element={<Games />}/>
-        <Route path="/note" element={<HomePage />}/>
         <Route path="/article" element={<Articles />}/>
         <Route path="/contact" element={<HomePage />}/>
         <Route path="/login" element={<HomePage />}/>
         <Route path="/register" element={<HomePage />}/>
-
+        <Route path="/dashboard" element={<Dashboard />}/>
       </Routes>
     </Router>
   )
